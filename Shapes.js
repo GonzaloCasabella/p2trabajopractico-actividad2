@@ -6,10 +6,25 @@ class Shape {
     perimeter() {
       return 0;
     }
+
+    Rombo() {
+        return 0;
+      }
+
+      cuadrado() {
+        return 0;
+      }
   
     toString() {
         return Object.getPrototypeOf(this).constructor.name;
     }
+    descripcion() {
+        return "la figura es " + this.toString() + ' el area es ' + this.area() + ' el perimetro es ' + this.perimeter() + ' el Rombo es ' + this.Rombo() + ' el cuadrado es ' + this.cuadrado()
+    }
+}
+
+perimetro() {
+    return "la figura es " + this.toString() + ' el perimetro es ' + this.perimeter() + 
 }
   
 class Circle extends Shape {
@@ -57,7 +72,32 @@ class Triangle extends Shape {
     }
 }
 
-export {Circle, Rectangle, Square, Triangle};
+class Rombo extends Shape {
+    constructor(b, h) {
+        super();
+        this.base = b; 
+        this.height = h;
+    }
+
+    area() {
+        return this.base * this.height / 6;
+    }
+}
+
+class Cuadrado extends Shape {
+    constructor(b, h) {
+        super();
+        this.base = b; 
+        this.height = h;
+    }
+
+    area() {
+        return this.base * this.height / 4;
+    }
+}
+
+
+export {Circle, Rectangle, Square, Triangle,Rombo,Cuadrado};
 
 
 
