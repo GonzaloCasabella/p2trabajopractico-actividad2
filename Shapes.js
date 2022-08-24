@@ -23,8 +23,8 @@ class Shape {
     }
 }
 
-perimetro() {
-    return "la figura es " + this.toString() + ' el perimetro es ' + this.perimeter() + 
+perimetro() { 
+    return "la figura es " + this.toString() + ' el perimetro es ' + this.perimeter() 
 }
   
 class Circle extends Shape {
